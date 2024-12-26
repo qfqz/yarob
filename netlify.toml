@@ -1,0 +1,8 @@
+[build]
+  publish = "build" # Adjust to your frontend build output folder
+  functions = "functions" # Adjust to your serverless functions folder
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
