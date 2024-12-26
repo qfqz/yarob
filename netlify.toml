@@ -1,20 +1,4 @@
-# Netlify configuration file
-
 [build]
-  # Command to build the project
-  command = "make all"
-  # Directory to publish static files
-  publish = "web"  # Adjust if your static files are in a different directory
-
-  # Functions directory (for serverless functions)
-  functions = "netlify/functions"
-
-# Optional: Redirects and rewrites
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-  force = true
-
-# Optional: Environment variables
-[build
+  command = "make all"  # This builds your project using the Makefile
+  publish = "web"  # Adjust if your static files are in a different folder
+  functions = "netlify/functions"  # For serverless functions
